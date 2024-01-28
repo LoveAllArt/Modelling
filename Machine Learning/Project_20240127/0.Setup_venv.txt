@@ -1,0 +1,17 @@
+# Create virtual environment
+pip3 install virtualenv
+python3 -m venv venv_Project_20240127
+
+# Use virtual environment:
+source venv_Project_20240127/bin/activate
+
+# create kernelin jupyterlab:
+python3 -m pip install ipykernel
+python3 -m ipykernel install --user --name=venv_Project_20240127
+
+# install packages:
+pip install pandas
+pip install numpy
+
+# check installed packages:
+%pip list
